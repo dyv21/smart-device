@@ -1,0 +1,61 @@
+.promo {
+  padding-top: 170px;
+
+
+  h1 {
+    font-family: $roboto-condensed;
+    font-size: 80px;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    line-height: 94px;
+    color: $white;
+    margin-bottom: 27px;
+  }
+
+  a {
+    display: inline-block;
+    color: $white;
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+
+.promo > a {
+  transform: rotate(-90deg) translate(-128px, -35px);
+  opacity: 0.5;
+}
+
+.promo__info {
+  padding-left: 96px;
+  max-width: 720px;
+
+  p {
+    color: $white;
+    font-size: 22px;
+    position: relative;
+    line-height: 34.5px;
+    margin: 0;
+    margin-bottom: 45px;
+
+    &::before {
+      content: "";
+      width: 66px;
+      height: 2px;
+      background-color: $white;
+      position: absolute;
+      top: 17px;
+      left: -93px;
+    }
+  }
+
+  a {
+    font-family: $roboto-condensed;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    border-radius: 5px;
+
+    font-size: 16px;
+    background-color: $bright-sky-blue;
+    padding: 18px 45px 20px 45px;
+  }
+}

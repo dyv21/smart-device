@@ -1,5 +1,7 @@
 .main-nav {
   display: flex;
+  padding-left: 2px;
+  padding-right: 6px;
 }
 
 .main-nav__logo {
@@ -37,6 +39,7 @@
       letter-spacing: 0.05em;
       text-transform: uppercase;
       border-radius: 5px;
+
       border: 1px solid $white;
       padding: 12px 27px 13px 26px;
     }
