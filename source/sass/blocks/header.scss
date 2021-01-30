@@ -4,10 +4,29 @@
   background:
     url("../img/promo-bg.png") no-repeat right center,
     url("../img/background.jpg") repeat-x;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background:
+      url("../img/promo-bg@2x.png") no-repeat right center,
+      url("../img/background@2x.jpg") repeat-x;
+    background-size: 1440px 825px;
+    background-position: center top;
+  }
+
+  @media (max-width: $tablet-width-only) {
+    height: 688px;
+  }
 }
 
 .header__wrapper {
-  padding-top: 28px;
+  padding-top: 33px;
   padding-left: 10px;
   padding-right: 10px;
+
+
+  @media (max-width: $tablet-width-only) {
+    padding-top: 22px;
+    padding-left: 25px;
+    padding-right: 0px;
+  }
 }
