@@ -11,8 +11,6 @@ const imagemin = require('gulp-imagemin');
 const gulpWebp = require('gulp-webp');
 const svgstore = require('gulp-svgstore');
 const del = require('del');
-// const jsmin = require("gulp-jsmin");
-// const htmlmin = require("gulp-htmlmin");
 
 // Styles
 
@@ -105,7 +103,7 @@ const copyHtml = () => {
     .pipe(gulp.dest('build'));
 };
 
-exports.copyHtml = copyHtmlJs;
+exports.copyHtml = copyHtml;
 
 //js copy
 
@@ -117,7 +115,7 @@ const copyJs = () => {
     .pipe(gulp.dest('build'));
 };
 
-exports.copyJs = copyHtmlJs;
+exports.copyJs = copyJs;
 
 // Watcher
 
