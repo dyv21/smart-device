@@ -25,3 +25,19 @@
   margin-top: 15px;
 }
 
+@mixin title {
+  font-family: $roboto-condensed;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 51px;
+  color: $white;
+
+  @media (max-width: $tablet-width-only) {
+    font-size: 32px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    font-size: 28px;
+  }
+}
+

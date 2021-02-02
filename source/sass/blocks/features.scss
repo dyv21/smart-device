@@ -24,15 +24,16 @@
 .features-list__item {
   width: 48.71%;
   min-height: 299px;
+  border: 1px solid $whisper;
   border-left: 3px solid $bright-sky-blue;
   padding-top: 40px;
   padding-left: 42px;
   cursor: pointer;
   transition: 0.4s;
+  margin-bottom: 30px;
 
   &:nth-child(odd) {
     margin-right: 30px;
-    margin-bottom: 30px;
   }
 
   &:nth-child(even) {
@@ -45,8 +46,6 @@
     width: 47.9%;
     min-height: 232px;
     max-height: 306px;
-    border: 1px solid $whisper;
-    border-left: 3px solid $bright-sky-blue;
     padding: 21px 17px 24px 26px;
 
     &:first-child {
