@@ -1,0 +1,12 @@
+
+.office {
+  h3 {
+    @include footer-title;
+  }
+
+  p {
+    @include footer-text;
+    margin: 0;
+  }
+}
+

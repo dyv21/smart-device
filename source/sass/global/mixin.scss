@@ -1,0 +1,27 @@
+@mixin footer-title {
+  font-family: $roboto-condensed;
+  text-transform: uppercase;
+  color: $dark;
+  font-size: 15px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  margin-bottom: 25px;
+}
+
+@mixin footer-text {
+  color: $dark;
+  font-size: 15px;
+  line-height: 25px;
+  opacity: 0.5;
+}
+
+@mixin copyright {
+  font-size: 13px;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $dark;
+  opacity: 0.5;
+  margin-top: 15px;
+}
+

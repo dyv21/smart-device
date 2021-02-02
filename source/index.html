@@ -123,68 +123,90 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="footer__header">
-        <div class="footer__logo">
-          <a>
-            <img src="img/logo.svg" alt="Логотип" width="202" height="52" />
-          </a>
+      <div class="footer__grid container">
+        <div class="footer__header">
+          <div class="footer__logo">
+            <a>
+              <svg class="footer__logo-icon" width="52" height="52">
+                <use xlink:href="img/sprite.svg#logo"></use>
+              </svg>
+              <svg class="footer__slogan" width="148" height="45">
+                <use xlink:href="img/sprite.svg#logo-footer-text"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="socials">
+            <ul class="socials__list">
+              <li class="socials__item">
+                <a href="#" aria-label="facebook">
+                  <svg width="26" height="26">
+                    <use xlink:href="img/sprite.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials__item">
+                <a href="#" aria-label="odnoklasniki">
+                  <svg width="26" height="26">
+                    <use xlink:href="img/sprite.svg#icon-ok"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials__item">
+                <a href="#" aria-label="vkontakte">
+                  <svg width="26" height="26">
+                    <use xlink:href="img/sprite.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="socials">
-          <ul class="socials__list">
-            <li class="socials__item">
-              <a href="#" aria-label="facebook"></a>
-              <a href="#" aria-label="odnoklasniki"></a>
-              <a href="#" aria-label="vkontakte"></a>
-            </li>
-          </ul>
+        <div class="footer__main">
+          <div class="site-section">
+            <h3>Разделы сайта</h3>
+            <ul class="site-section__list">
+              <li class="site-section__item">
+                <a href="#">О компании</a>
+              </li>
+              <li class="site-section__item">
+                <a href="#">Продукты</a>
+              </li>
+              <li class="site-section__item">
+                <a href="#">Производство печатных плат</a>
+              </li>
+              <li class="site-section__item">
+                <a href="#">Монтаж печатных плат</a>
+              </li>
+              <li class="site-section__item">
+                <a href="#">Комплектующие</a>
+              </li>
+              <li class="site-section__item">
+                <a href="#">Доставка</a>
+              </li>
+              <li class="site-section__item">
+                <a href="#">Контакты</a>
+              </li>
+            </ul>
+          </div>
+          <div class="office">
+            <h3>Наш офис</h3>
+            <p>г. Мытищи, Олимпийский проспект, д.10</p>
+            <p>+7 (495) 589-40-50</p>
+            <p>+7 (925) 003-87-67</p>
+            <p>+7 (926) 926-080-79</p>
+          </div>
         </div>
-      </div>
-      <div class="footer__main">
-        <div class="site-section">
-          <h3>Разделы сайта</h3>
-          <ul class="site-section__list">
-            <li class="site-section__item">
-              <a href="#">О компании</a>
-            </li>
-            <li class="site-section__item">
-              <a href="#">Продукты</a>
-            </li>
-            <li class="site-section__item">
-              <a href="#">Производство печатных плат</a>
-            </li>
-            <li class="site-section__item">
-              <a href="#">Монтаж печатных плат</a>
-            </li>
-            <li class="site-section__item">
-              <a href="#">Комплектующие</a>
-            </li>
-            <li class="site-section__item">
-              <a href="#">Дотсавка</a>
-            </li>
-            <li class="site-section__item">
-              <a href="#">Контакты</a>
-            </li>
-          </ul>
-        </div>
-        <div class="office">
-          <h3>Наш офис</h3>
-          <p>г. Мытищи, Олимпийский проспект, д.10</p>
-          <p>+7 (495) 589-40-50</p>
-          <p>+7 (925) 003-87-67</p>
-          <p>+7 (926) 926-080-79</p>
-        </div>
-      </div>
-
-      <div class="footer__footer">
-        <div class="copyright">
-          <p>Все права защищены</p>
-          <p>1999-2018 SD Service Devices</p>
-        </div>
-        <div class="terms">
-          <p>Условия конфиденциальности</p>
-        </div>
-        <div class="developer">
-          <p>Developed by wow studio</p>
+        <div class="footer__footer">
+          <div class="copyright">
+            <p>Все права защищены</p>
+            <p>1999-2018 SD Service Devices</p>
+          </div>
+          <div class="footer__terms terms">
+            <p>Условия конфиденциальности</p>
+          </div>
+          <div class="developer">
+            <p>Developed by wow studio</p>
+          </div>
         </div>
       </div>
     </footer>

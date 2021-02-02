@@ -1,0 +1,9 @@
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  min-width: 457px;
+
+  p {
+    @include copyright;
+  }
+}

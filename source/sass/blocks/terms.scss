@@ -1,0 +1,7 @@
+.terms {
+  min-width: 480px;
+
+  p {
+    @include copyright;
+  }
+}
