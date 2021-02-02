@@ -16,6 +16,12 @@
     background-size: 465px 340px, auto;
     background-position: 170% 40%, 0 0;
   }
+
+
+  @media (max-width: $mobile-width-only) {
+    height: 648px;
+
+  }
 }
 
 .header__wrapper {
