@@ -1,0 +1,11 @@
+.body__header {
+  margin-bottom: 110px;
+
+  @media (max-width: $tablet-width-only) {
+    margin-bottom: 53px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    margin-bottom: 37px;
+  }
+}
