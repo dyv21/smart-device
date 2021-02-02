@@ -1,0 +1,27 @@
+.site-section {
+  h3 {
+    @include footer-title;
+    margin-left: 3px;
+  }
+}
+
+.site-section__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-height: 121px;
+
+
+  @media (max-width: $tablet-width-only) {
+    max-height: 200px;
+  }
+}
+
+.site-section__item {
+  a {
+   @include footer-text;
+  }
+}
