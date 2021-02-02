@@ -1,9 +1,15 @@
 .copyright {
   display: flex;
   justify-content: space-between;
-  min-width: 457px;
+  max-width: 457px;
 
   p {
     @include copyright;
+
+    @media (max-width: $tablet-width-only) {
+      &:first-child {
+        display: none;
+      }
+    }
   }
 }

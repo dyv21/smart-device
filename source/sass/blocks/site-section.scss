@@ -13,7 +13,11 @@
   flex-direction: column;
   flex-wrap: wrap;
   max-height: 121px;
-  min-width: 500px;
+
+
+  @media (max-width: $tablet-width-only) {
+    max-height: 200px;
+  }
 }
 
 .site-section__item {

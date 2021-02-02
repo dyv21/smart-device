@@ -8,5 +8,10 @@
     @include footer-text;
     margin: 0;
   }
+
+
+  @media (max-width: $mobile-width-only) {
+    max-width: 66%;
+  }
 }
 
