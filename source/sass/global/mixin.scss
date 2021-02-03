@@ -34,10 +34,12 @@
 
   @media (max-width: $tablet-width-only) {
     font-size: 32px;
+    line-height: 45px;
   }
 
   @media (max-width: $mobile-width-only) {
     font-size: 28px;
+    line-height: 39px;
   }
 }
 

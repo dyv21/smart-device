@@ -1,13 +1,14 @@
 .about {
   padding-left: 315px;
   background: url("../img/2005.jpg") no-repeat 105px 5px;
+  padding-bottom: 50px;
 
   @media (max-width: $tablet-width-only) {
     padding-left: 212px;
     background: url("../img/2005-tablet.jpg") no-repeat;
   }
 
-  @media (max-width: $tablet-width-only) {
+  @media (max-width: $mobile-width-only) {
     padding: 0 16px;
     background: transparent;
   }
@@ -19,13 +20,13 @@
     margin-bottom: 22px;
 
     @media (max-width: $tablet-width-only) {
-      margin-top: 23px;
-      margin-bottom: 21px;
+      margin-top: 28px;
+      margin-left: -2px;
+      margin-bottom: 22px;
     }
 
     @media (max-width: $mobile-width-only) {
-      margin-top: 30px;
-      margin-bottom: 16px;
+      margin-top: 34px;
     }
   }
 
@@ -48,6 +49,7 @@
     @media (max-width: $mobile-width-only) {
       width: 100%;
       margin-bottom: 40px;
+      margin-top: 0;
 
       &:last-of-type {
         margin-bottom: 0;
@@ -72,11 +74,20 @@
     margin-top: 18px;
     padding: 10px 0;
 
+    &:hover {
+      background-color: $bright-sky-blue;
+      color: $white;
+    }
+
+    &:active {
+      opacity: 0.8;
+    }
+
     @media (max-width: $tablet-width-only)  {
       margin-top: 20px;
     }
 
-    @media (max-width: $tablet-width-only)  {
+    @media (max-width: $mobile-width-only)  {
       margin-top: 26px;
     }
   }

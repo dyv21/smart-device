@@ -1,3 +1,34 @@
 .feedback {
-  background-color: $bright-sky-blue;
+  background: $bright-sky-blue url("../img/bg-triangle.svg") no-repeat -1px -61px;
+
+  @media (max-width: $tablet-width-only) {
+    background-image: none;
+  }
 }
+
+.feedback__wrapper {
+  padding-top: 92px;
+  padding-bottom: 114px;
+  background: url("../img/airplane.png") no-repeat 108px 162px;
+
+  @media (max-width: $tablet-width-only) {
+    background: none;
+    padding-top: 80px;
+    padding-bottom: 104px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    padding-top: 30px;
+    padding-bottom: 42px;
+  }
+}
+
+.feedback__form {
+  margin-left: auto;
+  margin-right: 93px;
+
+  @media (max-width: $tablet-width-only) {
+    margin: 0 auto;
+  }
+}
+

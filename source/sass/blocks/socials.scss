@@ -5,6 +5,21 @@
   display: flex;
 }
 
-.socials__item:not(:last-child) {
-  margin-right: 17px;
+.socials__item {
+
+  svg {
+    fill: $very-light-pink;
+  }
+
+  &:not(:last-child) {
+    margin-right: 17px;
+  }
+
+  & svg:hover  {
+    fill: $bright-sky-blue;
+  }
+  & svg:active {
+    opacity: 0.7;
+  }
 }
+
