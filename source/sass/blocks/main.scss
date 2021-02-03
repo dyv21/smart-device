@@ -3,6 +3,18 @@
 }
 
 .main__about {
-  margin-bottom: 100px;
+  margin-bottom: 110px;
 
+  @media (max-width: $tablet-width-only) {
+   margin-bottom: 83px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    margin-bottom: 66px;
+  }
 }
+
+.main__production {
+  margin-bottom: 0;
+}
+
