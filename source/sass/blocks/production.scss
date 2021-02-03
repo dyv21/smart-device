@@ -2,6 +2,14 @@
   background-color: $dark;
   padding-top: 48px;
   padding-bottom: 112px;
+
+  @media (max-width: $tablet-width-only) {
+   padding-bottom: 30px;
+  }
+  @media (max-width: $mobile-width-only) {
+    padding-top: 50px;
+    padding-bottom: 34px;
+  }
 }
 
 .producttion__wrapper {
@@ -44,12 +52,15 @@
 
   @media (max-width: $tablet-width-only) {
     flex-direction: column;
-    width: 94%;
+    width: 100%;
+    min-width: 720px;
     margin: 0 auto;
   }
 
   @media (max-width: $mobile-width-only) {
     width: 100%;
+    max-width: 100%;
+    min-width: 290px;
   }
 }
 
@@ -68,7 +79,7 @@
     height: 256px;
     padding-left: 45px;
     padding-top: 40px;
-    margin-bottom: 45px;
+    margin-bottom: 47px;
   }
 
 
@@ -83,7 +94,6 @@
     font-size: 20px;
     line-height: 30px;
     max-width: 50%;
-
 
 
     @media (max-width: $tablet-width-only) {
@@ -110,6 +120,10 @@
     @media (max-width: $tablet-width-only) {
       background-image: url("../img/production-tablet.jpg");
     }
+
+    @media (max-width: $mobile-width-only) {
+      background-image: url("../img/production-mobile.jpg");
+    }
   }
 
   &--mounting {
@@ -119,6 +133,10 @@
     @media (max-width: $tablet-width-only) {
       background-image: url("../img/mounting-tablet.jpg");
     }
+
+    @media (max-width: $mobile-width-only) {
+      background-image: url("../img/mounting-mobile.jpg");
+    }
   }
 
   &--accessories {
@@ -127,6 +145,16 @@
 
     @media (max-width: $tablet-width-only) {
       background-image: url("../img/accessories-tablet.jpg");
+    }
+
+    @media (max-width: $mobile-width-only) {
+      padding-left: 36px;
+      padding-top: 30px;
+      background-image: url("../img/accessories-mobile.jpg");
+
+      h3 {
+        max-width: 60%;
+      }
     }
   }
 

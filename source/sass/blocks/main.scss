@@ -1,20 +1,28 @@
-.main__features {
 
-}
+.main {
+  background: url("../img/triangle-pack.svg") no-repeat 0 -30px;
+  padding-top: 94px;
 
-.main__about {
-  margin-bottom: 110px;
-
-  @media (max-width: $tablet-width-only) {
-   margin-bottom: 83px;
+  @media (max-width: $tablet-width-only)  {
+    padding-top: 38px;
+    background: url("../img/triangle-tab.svg") no-repeat 144px -75px / 90%;
   }
 
   @media (max-width: $mobile-width-only) {
-    margin-bottom: 66px;
+   background-position: 0 0;
   }
 }
 
-.main__production {
-  margin-bottom: 0;
+.main__about {
+  margin-bottom: 60px;
+
+  @media (max-width: $tablet-width-only) {
+   margin-bottom: 32px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    margin-bottom: 67px;
+  }
 }
+
 

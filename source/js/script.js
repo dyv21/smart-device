@@ -11,3 +11,13 @@ for (let anchor of anchors) {
     });
   });
 }
+
+const accordeonList = document.querySelectorAll('.accordeon__item');
+
+accordeonList.forEach((item) => {
+  item.addEventListener('click', function () {
+    this.classList.toggle('accordeon__item--active');
+
+  });
+});
+

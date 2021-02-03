@@ -2,6 +2,7 @@
 .office {
   h3 {
     @include footer-title;
+    margin-left: 3px;
   }
 
   p {

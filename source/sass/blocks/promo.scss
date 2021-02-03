@@ -58,7 +58,7 @@
 
   @media (max-width: $tablet-width-only) {
     max-width: 70%;
-    padding-left: 52px;
+    padding-left: 51px;
   }
 
   @media (max-width: $mobile-width-only) {
@@ -114,17 +114,25 @@
     letter-spacing: 0.05em;
     text-transform: uppercase;
     border-radius: 5px;
-
     font-size: 16px;
     background-color: $bright-sky-blue;
-    padding: 19px 45px 20px 45px;
+    padding: 19px 50px 20px 45px;
+
+    &:hover {
+      background:$white;
+      color: $bright-sky-blue;
+    }
+
+    &:active {
+      opacity: 0.7;
+    }
 
     span:last-child {
       display: none;
     }
 
     @media (max-width: $tablet-width-only)  {
-      padding: 19px 31px 20px 31px;
+      padding: 19px 34px 20px 31px;
     }
 
     @media (max-width: $mobile-width-only) {

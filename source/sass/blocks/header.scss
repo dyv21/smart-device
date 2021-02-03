@@ -2,25 +2,28 @@
   height: 881px;
   background-color: $dark;
   background:
-    url("../img/promo-bg.png") no-repeat right center,
+    url("../img/promo-bg.png") no-repeat 1030px 250px,
     url("../img/background.jpg") repeat-x;
 
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background:
-      url("../img/promo-bg@2x.png") no-repeat right center,
-      url("../img/background@2x.jpg") repeat-x;
-  }
+  // @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  //   background:
+  //     url("../img/promo-bg@2x.png") no-repeat right center,
+  //     url("../img/background@2x.jpg") repeat-x;
+  // }
+
 
   @media (max-width: $tablet-width-only) {
-    height: 688px;
-    background-size: 465px 340px, auto;
-    background-position: 170% 40%, 0 0;
+    height: 686px;
+    background:
+      url("../img/promo-bg-tablet.png") no-repeat 450px 70px / 465px 340px,
+      url("../img/background.jpg") repeat-x 0 0;
   }
-
 
   @media (max-width: $mobile-width-only) {
     height: 648px;
-
+    background:
+    url("../img/promo-bg-mobile.png") no-repeat 25px 0,
+    url("../img/background.jpg") repeat-x;
   }
 }
 
@@ -31,8 +34,8 @@
 
 
   @media (max-width: $tablet-width-only) {
-    padding-top: 22px;
-    padding-left: 25px;
+    padding-top: 20px;
+    padding-left: 24px;
     padding-right: 0px;
   }
 
