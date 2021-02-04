@@ -12,7 +12,24 @@
 
 
   @media (max-width: $mobile-width-only) {
-    max-width: 66%;
+    max-width: 320px;
+    width: 100%;
+    padding: 0 10px;
+    margin: 0 auto;
+
+    h3 {
+      margin-left: 5px;
+      margin-bottom: 14px;
+      margin-top: 27px;
+    }
+
+
+    .office__content {
+      margin-left: 6px;
+      margin-top: 31px;
+      margin-bottom: 30px;
+      max-width: 80%;
+    }
   }
 }
 
