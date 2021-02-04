@@ -16,7 +16,6 @@ for (let anchor of anchors) {
 const accordeon = body.querySelector('.accordeon')
 const accordeonList = accordeon.querySelectorAll('.accordeon__item');
 
-console.log(accordeon);
 accordeon.classList.remove('accordeon--nojs');
 
 if (accordeonList) {
