@@ -131,7 +131,7 @@
                 <label class="visually-hidden" for="user-name">Имя</label>
                 <input type="text" name="user-name" id="user-name" placeholder="Имя" required />
                 <label class="visually-hidden" for="user-phone">Телефон</label>
-                <input type="tel" name="user-phone" id="user-phone" placeholder="Телефон" pattern="[\+\0-9]+" title="Ведите номер в формате +7999000000" maxlength="12" required />
+                <input type="tel" name="user-phone" id="user-phone" placeholder="Телефон" maxlength="12" required />
               </div>
               <label class="visually-hidden" for="question">Ваш вопрос</label>
               <textarea id="question" name="question">Ваш вопрос</textarea>
@@ -183,37 +183,43 @@
           </ul>
         </div>
         <div class="footer__site-section site-section accordeon__item">
-          <h3>Разделы сайта</h3>
-          <ul class="site-section__list accordeon__content">
-            <li class="site-section__item">
-              <a href="#">О компании</a>
-            </li>
-            <li class="site-section__item">
-              <a href="#">Продукты</a>
-            </li>
-            <li class="site-section__item">
-              <a href="#">Производство печатных плат</a>
-            </li>
-            <li class="site-section__item">
-              <a href="#">Монтаж печатных плат</a>
-            </li>
-            <li class="site-section__item">
-              <a href="#">Комплектующие</a>
-            </li>
-            <li class="site-section__item">
-              <a href="#">Доставка</a>
-            </li>
-            <li class="site-section__item">
-              <a href="#">Контакты</a>
-            </li>
-          </ul>
+          <div class="site-section__wrapper">
+            <h3>Разделы сайта</h3>
+            <ul class="site-section__list accordeon__content">
+              <li class="site-section__item">
+                <a href="#">О компании</a>
+              </li>
+              <li class="site-section__item">
+                <a href="#">Продукты</a>
+              </li>
+              <li class="site-section__item">
+                <a href="#">Производство печатных плат</a>
+              </li>
+              <li class="site-section__item">
+                <a href="#">Монтаж печатных плат</a>
+              </li>
+              <li class="site-section__item">
+                <a href="#">Комплектующие</a>
+              </li>
+              <li class="site-section__item">
+                <a href="#">Доставка</a>
+              </li>
+              <li class="site-section__item">
+                <a href="#">Контакты</a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="footer__office office">
-          <h3>Наш офис</h3>
-          <p>г. Мытищи, Олимпийский проспект, д.10</p>
-          <p>+7 (495) 589-40-50</p>
-          <p>+7 (925) 003-87-67</p>
-          <p>+7 (926) 926-080-79</p>
+        <div class="footer__office office accordeon__item">
+          <div class="office__wrapper">
+            <h3>Наш офис</h3>
+            <div class="office__content accordeon__content">
+              <p>г. Мытищи, Олимпийский проспект, д.10</p>
+              <p>+7 (495) 589-40-50</p>
+              <p>+7 (925) 003-87-67</p>
+              <p>+7 (926) 926-080-79</p>
+            </div>
+          </div>
         </div>
         <div class="footer__copyright copyright">
           <p>Все права защищены</p>
@@ -227,6 +233,30 @@
         </div>
       </div>
     </footer>
+    <secton class="modal">
+      <div class="modal__window">
+        <form class="modal__form" action="https://echo.htmlacademy.ru" method="post">
+          <fieldset>
+            <legend>Закажите звонок</legend>
+            <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+
+              <label class="visually-hidden" for="modal-user-name">Имя</label>
+              <input type="text" name="user-name" id="modal-user-name" placeholder="Имя" required />
+              <label class="visually-hidden" for="modal-user-phone">Телефон</label>
+              <input type="tel" name="user-phone" id="modal-user-phone" placeholder="Телефон"   maxlength="12" required />
+
+            <label class="visually-hidden" for="modal-question">Ваш вопрос</label>
+            <textarea id="modal-question" name="modal-question">Ваш вопрос</textarea>
+          </fieldset>
+          <div class="modal__footer">
+            <button type="submit">Отправить</button>
+            <input class="visually-hidden form__checkbox" type="checkbox" name="agreement" id="modal-agreement" required checked />
+            <label class="form__label" for="modal-agreement">Я согласен на обработку персональных данных</label>
+          </div>
+        </form>
+        <button type="button" class="modal__close" aria-label="Закрыть окно"></button>
+      </div>
+    </secton>
     <script src="js/script.js"></script>
   </body>
 </html>

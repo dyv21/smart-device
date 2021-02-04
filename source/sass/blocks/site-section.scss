@@ -3,6 +3,23 @@
     @include footer-title;
     margin-left: 2px;
   }
+
+  @media (max-width: $mobile-width-only) {
+    width: 100%;
+    border-bottom: 1px solid $medium-grey-20;
+    padding: 0 13px;
+
+    h3 {
+      margin-bottom: 28px;
+    }
+  }
+}
+
+.site-section__wrapper {
+  @media (max-width: $mobile-width-only) {
+    max-width: 296px;
+    margin: 0 auto;
+  }
 }
 
 .site-section__list {
@@ -18,6 +35,12 @@
   @media (max-width: $tablet-width-only) {
     max-height: 200px;
   }
+
+  @media (max-width: $mobile-width-only) {
+    margin-left: 4px;
+    margin-bottom: 30px;
+  }
+
 }
 
 .site-section__item {

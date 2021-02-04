@@ -2,34 +2,63 @@
 @media (max-width: $mobile-width-only) {
   .accordeon__item {
     background: transparent;
+    overflow: hidden;
+
 
     h3 {
+      position: relative;
 
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        right: 5px;
+        top: 7px;
+        width: 16px;
+        height: 1px;
+        background-color: $silver;
+      }
+
+      &::after {
+        transform: rotate(90deg);
+      }
     }
 
     .accordeon__content {
       display: none;
     }
+
+    &--active {
+
+      h3 {
+        position: relative;
+
+        &::before {
+          content: "";
+          position: absolute;
+          right: 5px;
+          top: 7px;
+          width: 16px;
+          height: 1px;
+          background-color: $silver;
+        }
+      }
+
+      .accordeon__content{
+        display: block;
+        animation: open 0.5s ease-out;
+
+      }
+    }
   }
 
-
-
-
-
-  .accordeon-content--active {
-    .accordeon__content {
-      display: block;
-      animation: open 0.5s ease-out;
+  @keyframes open {
+    0% {
+      opacity: 0;
     }
 
-    @keyframes open {
-      0% {
-        opacity: 0;
-      }
-
-      100% {
-        opacity: 1;
-      }
+    100% {
+      opacity: 1;
     }
   }
 }
