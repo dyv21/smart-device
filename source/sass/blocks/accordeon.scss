@@ -48,8 +48,16 @@
     }
   }
 
-  .accordeon--nojs .accordeon__content {
-    display: block;
+  .accordeon--nojs {
+    h3 {
+      &::before,
+      &::after {
+        content: none;
+      }
+    }
+    .accordeon__content {
+      display: block;
+    }
   }
 
   @keyframes open {
