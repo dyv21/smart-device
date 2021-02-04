@@ -8,19 +8,24 @@
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background:
-      url("../img/board@2x.png") no-repeat calc(50% + 433px) 258px / 50%,
+      url("../img/board@2x.png") no-repeat calc(50% + 433px) 258px / 705px 515px,
       url("../img/two-triangles.svg") no-repeat calc(50% + 352px) 106px,
       url("../img/background@2x.jpg") repeat-x 0 0 / 100%;
   }
 
   @media (max-width: $tablet-width-only) {
     height: 686px;
+    background:
+      url("../img/board-tablet.png") no-repeat calc(100% + 205px) 115px / 465px 340px,
+      url("../img/two-triangles-tablet.svg") no-repeat calc(100% + 200px) -40px,
+      url("../img/background-tablet.jpg") repeat-x 0 0 / 100%;
+
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background:
         url("../img/board-tablet@2x.png") no-repeat calc(100% + 205px) 115px / 465px 340px,
-        url("../img/two-triangles-tablet.svg") no-repeat 100% 0,
-        url("../img/background-tablet@2x.jpg") repeat-x 0 0 / 100%;
+        url("../img/two-triangles-tablet.svg") no-repeat calc(100% + 200px) - 40px,
+        url("../img/background-tablet@2x.jpg") repeat-x 0 0;
     }
   }
 
@@ -28,15 +33,15 @@
     height: 648px;
     background:
     url("../img/board-mobile.png") no-repeat calc(100% + 10px) 90px,
-    url("../img/two-triangles-mobile.svg") no-repeat calc(100% + 168px) 0 / 500px 464px,
+    url("../img/two-triangles-mobile.svg") no-repeat calc(100% + 337px) -45px,
     url("../img/background-mobile.jpg") repeat-x;
   }
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background:
       url("../img/board-mobile@2x.png") no-repeat calc(100%) 90px,
-      url("../img/two-triangles-mobile.svg") no-repeat calc(100% + 170px) -10px / 505px 482px,
-      url("../img/background-mobile@2x.jpg") repeat-x 0 0 / 100%;
+      url("../img/two-triangles-mobile.svg") no-repeat calc(100% + 337px) -45px,
+      url("../img/background-mobile@2x.jpg") repeat-x 0 0 50%;
   }
 }
 
