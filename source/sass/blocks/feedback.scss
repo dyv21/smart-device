@@ -1,5 +1,5 @@
 .feedback {
-  background: $bright-sky-blue url("../img/bg-triangle.svg") no-repeat -1px -61px;
+  background: $bright-sky-blue url("../img/bg-triangle.svg") no-repeat calc(75% - 786px) 95px;
 
   @media (max-width: $tablet-width-only) {
     background-image: none;
@@ -10,6 +10,10 @@
   padding-top: 92px;
   padding-bottom: 114px;
   background: url("../img/airplane.png") no-repeat 108px 162px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background: url("../img/airplane@2x.png") no-repeat 108px 162px / 511px 288px;
+  }
 
   @media (max-width: $tablet-width-only) {
     background: none;
@@ -31,4 +35,3 @@
     margin: 0 auto;
   }
 }
-

@@ -111,7 +111,6 @@
     padding: 10px 0;
     cursor: pointer;
     margin-bottom: 25px;
-
   }
 }
 
@@ -149,23 +148,23 @@
     margin-top: 10px;
     cursor: pointer;
 
-   &::before {
-    position: absolute;
-    left: 0;
-    content: "";
-    width: 16px;
-    height: 16px;
-    background-color: $bright-sky-blue;
-    border: 1px solid $white;
-   }
+    &::before {
+      position: absolute;
+      left: 0;
+      content: "";
+      width: 16px;
+      height: 16px;
+      background-color: $bright-sky-blue;
+      border: 1px solid $white;
+    }
 
-   &:hover {
-     opacity: 1;
-   }
+    &:hover {
+      opacity: 1;
+    }
 
-   &:active {
-    opacity: 0.5;
-   }
+    &:active {
+      opacity: 0.5;
+    }
   }
 
   input:checked + label::after {

@@ -3,9 +3,17 @@
   background: url("../img/2005.jpg") no-repeat 105px 5px;
   padding-bottom: 50px;
 
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background: url("../img/2005@2x.jpg") no-repeat 105px 5px / 220px 317px;
+  }
+
   @media (max-width: $tablet-width-only) {
     padding-left: 212px;
     background: url("../img/2005-tablet.jpg") no-repeat;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background: url("../img/2005-tablet@2x.jpg") no-repeat -2px -3px / 251px 361px;
+    }
   }
 
   @media (max-width: $mobile-width-only) {
@@ -83,11 +91,11 @@
       opacity: 0.8;
     }
 
-    @media (max-width: $tablet-width-only)  {
+    @media (max-width: $tablet-width-only) {
       margin-top: 20px;
     }
 
-    @media (max-width: $mobile-width-only)  {
+    @media (max-width: $mobile-width-only) {
       margin-top: 26px;
     }
   }
