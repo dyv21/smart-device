@@ -24,6 +24,7 @@
       }
     }
 
+
     .accordeon__content {
       display: none;
     }
@@ -44,12 +45,16 @@
         }
       }
 
-      .accordeon__content{
+      .accordeon__content {
         display: block;
         animation: open 0.5s ease-out;
 
       }
     }
+  }
+
+  .accordeon--nojs .accordeon__content {
+    display: block;
   }
 
   @keyframes open {

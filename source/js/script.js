@@ -1,5 +1,6 @@
 // smooth scroll to anchor
-const anchors = document.querySelectorAll('a[href^="#"]');
+const body = document.querySelector('.body');
+const anchors = body.querySelectorAll('a[href^="#"]');
 
 for (let anchor of anchors) {
   anchor.addEventListener('click', (e) => {
@@ -12,27 +13,36 @@ for (let anchor of anchors) {
   });
 }
 
-const accordeonList = document.querySelectorAll('.accordeon__item');
+const accordeon = body.querySelector('.accordeon')
+const accordeonList = accordeon.querySelectorAll('.accordeon__item');
 
-accordeonList.forEach((item) => {
-  item.addEventListener('click', function () {
-    this.classList.toggle('accordeon__item');
-    this.classList.toggle('accordeon__item--active');
+console.log(accordeon);
+accordeon.classList.remove('accordeon--nojs');
+
+if (accordeonList) {
+  accordeonList.forEach((item) => {
+    item.addEventListener('click', function () {
+      this.classList.toggle('accordeon__item');
+      this.classList.toggle('accordeon__item--active');
+    });
   });
-});
+}
 
-const modal = document.querySelector('.modal')
-const modalShow = document.querySelector('.main-nav__item:last-child');
+const modal = body.querySelector('.modal')
+const modalShow = body.querySelector('.main-nav__item:last-child');
 const modalClose = modal.querySelector('.modal__close')
 
 const closePopup = () => {
   if (modal.classList.contains('modal--show')) {
     modal.classList.remove('modal--show');
+    body.removeAttribute('style');
   };
 }
 
-modalShow.addEventListener('click', () => {
+modalShow.addEventListener('click', (evt) => {
+  evt.preventDefault();
   modal.classList.add('modal--show');
+  body.style = `overflow: hidden;`;
 });
 
 modal.addEventListener ('click', (evt) => {
@@ -51,7 +61,6 @@ document.addEventListener('keydown', (evt) => {
 modalClose.addEventListener('click', closePopup);
 
 
-
-const phoneInput = document.querySelectorAll('input[type="tel"]');
+const phoneInput = body.querySelectorAll('input[type="tel"]');
 
 phoneInput.forEach(input => IMask(input, {mask: '+{7}(000)000-00-00'}));

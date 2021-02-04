@@ -40,7 +40,7 @@
               </a>
             </li>
             <li class="main-nav__item">
-              <a href="#">Заказать звонок</a>
+              <a href="callback.html">Заказать звонок</a>
             </li>
           </ul>
         </nav>
@@ -96,14 +96,12 @@
       <section class="main__about about container">
         <h2>О компании</h2>
         <p>Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии <br> с 1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней.</p>
-        <p>
-          Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные платы и комплектующие Service Devices применяются на предприятиях Российских
-          Железных Дорог <span>(РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.</span>
-        </p>
+        <p>Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные платы и комплектующие Service Devices применяются на предприятиях Российских
+          Железных Дорог <span>(РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.</span></p>
         <a href="#">Подробнее</a>
       </section>
       <section class="main__production production">
-        <div class="producttion__wrapper container">
+        <div class="production__wrapper container">
           <h2>Service Device предлагает следующие товары и услуги</h2>
           <ul class="production-list">
             <li class="production-list__item production-list__item--production">
@@ -131,7 +129,7 @@
                 <label class="visually-hidden" for="user-name">Имя</label>
                 <input type="text" name="user-name" id="user-name" placeholder="Имя" required />
                 <label class="visually-hidden" for="user-phone">Телефон</label>
-                <input type="tel" name="user-phone" id="user-phone" placeholder="Телефон" maxlength="12" required />
+                <input type="tel" name="user-phone" id="user-phone" placeholder="Телефон" maxlength="16" required />
               </div>
               <label class="visually-hidden" for="question">Ваш вопрос</label>
               <textarea id="question" name="question">Ваш вопрос</textarea>
@@ -146,7 +144,7 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="footer__grid accordeon container">
+      <div class="footer__grid accordeon accordeon--nojs container">
         <div class="footer__logo">
           <a>
             <svg class="footer__logo-icon" width="52" height="52">
@@ -233,32 +231,29 @@
         </div>
       </div>
     </footer>
-    <secton class="modal">
+    <div class="modal">
       <div class="modal__window">
         <form class="modal__form" action="https://echo.htmlacademy.ru" method="post">
           <fieldset>
             <legend>Закажите звонок</legend>
             <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
-
-              <label class="visually-hidden" for="modal-user-name">Имя</label>
-              <input type="text" name="user-name" id="modal-user-name" placeholder="Имя" required />
-              <label class="visually-hidden" for="modal-user-phone">Телефон</label>
-              <input type="tel" name="user-phone" id="modal-user-phone" placeholder="Телефон"   maxlength="12" required />
-
+            <label class="visually-hidden" for="modal-user-name">Имя</label>
+            <input type="text" name="user-name" id="modal-user-name" placeholder="Имя" required />
+            <label class="visually-hidden" for="modal-user-phone">Телефон</label>
+            <input type="tel" name="user-phone" id="modal-user-phone" placeholder="Телефон"   maxlength="16" required />
             <label class="visually-hidden" for="modal-question">Ваш вопрос</label>
             <textarea id="modal-question" name="modal-question">Ваш вопрос</textarea>
           </fieldset>
           <div class="modal__footer">
             <button type="submit">Отправить</button>
-            <input class="visually-hidden form__checkbox" type="checkbox" name="agreement" id="modal-agreement" required checked />
-            <label class="form__label" for="modal-agreement">Я согласен на обработку персональных данных</label>
+            <input class="visually-hidden" type="checkbox" name="agreement" id="modal-agreement" required checked />
+            <label for="modal-agreement">Я согласен на обработку персональных данных</label>
           </div>
         </form>
         <button type="button" class="modal__close" aria-label="Закрыть окно"></button>
       </div>
-    </secton>
-    <script src="js/imask.min.js"></script>
+    </div>
+    <script src="js/vendor.js"></script>
     <script src="js/script.js"></script>
-
   </body>
 </html>
