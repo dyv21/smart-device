@@ -1,9 +1,7 @@
-
 @media (max-width: $mobile-width-only) {
   .accordeon__item {
     background: transparent;
     overflow: hidden;
-
 
     h3 {
       position: relative;
@@ -24,13 +22,11 @@
       }
     }
 
-
     .accordeon__content {
       display: none;
     }
 
     &--active {
-
       h3 {
         position: relative;
 
@@ -48,7 +44,6 @@
       .accordeon__content {
         display: block;
         animation: open 0.5s ease-out;
-
       }
     }
   }

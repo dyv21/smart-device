@@ -6,20 +6,19 @@
 }
 
 .socials__item {
+  &:not(:last-child) {
+    margin-right: 17px;
+  }
 
   svg {
     fill: $very-light-pink;
   }
 
-  &:not(:last-child) {
-    margin-right: 17px;
-  }
-
-  & svg:hover  {
+  svg:hover {
     fill: $bright-sky-blue;
   }
-  & svg:active {
+
+  svg:active {
     opacity: 0.7;
   }
 }
-

@@ -84,10 +84,10 @@
     }
 
     @media (max-width: $mobile-width-only) {
-     margin-left: 0;
-     padding-top: 15px;
-     height: 104px;
-     margin-bottom: 26px;
+      margin-left: 0;
+      padding-top: 15px;
+      height: 104px;
+      margin-bottom: 26px;
     }
   }
 
@@ -186,23 +186,23 @@
         margin-top: 32px;
       }
 
-     &::before {
-      position: absolute;
-      left: -20px;
-      content: "";
-      width: 16px;
-      height: 16px;
-      background-color: $bright-sky-blue;
-      border: 1px solid $white;
-     }
+      &::before {
+        position: absolute;
+        left: -20px;
+        content: "";
+        width: 16px;
+        height: 16px;
+        background-color: $bright-sky-blue;
+        border: 1px solid $white;
+      }
 
-     &:hover {
-       opacity: 1;
-     }
+      &:hover {
+        opacity: 1;
+      }
 
-     &:active {
-      opacity: 0.5;
-     }
+      &:active {
+        opacity: 0.5;
+      }
     }
 
     input:checked + label::after {

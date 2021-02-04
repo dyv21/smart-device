@@ -1,15 +1,14 @@
-
 .main {
   background: url("../img/triangle-pack.svg") no-repeat 0 -30px;
   padding-top: 94px;
 
-  @media (max-width: $tablet-width-only)  {
+  @media (max-width: $tablet-width-only) {
     padding-top: 38px;
     background: url("../img/triangle-tab.svg") no-repeat 144px -75px / 90%;
   }
 
   @media (max-width: $mobile-width-only) {
-   background-position: 0 0;
+    background-position: 0 0;
   }
 }
 
@@ -17,12 +16,10 @@
   margin-bottom: 60px;
 
   @media (max-width: $tablet-width-only) {
-   margin-bottom: 32px;
+    margin-bottom: 32px;
   }
 
   @media (max-width: $mobile-width-only) {
     margin-bottom: 67px;
   }
 }
-
-

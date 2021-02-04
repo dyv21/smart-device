@@ -4,8 +4,9 @@
   padding-bottom: 112px;
 
   @media (max-width: $tablet-width-only) {
-   padding-bottom: 30px;
+    padding-bottom: 30px;
   }
+
   @media (max-width: $mobile-width-only) {
     padding-top: 50px;
     padding-bottom: 34px;
@@ -113,7 +114,7 @@
   }
 
   &--production {
-    background-image: url("../img/production.jpg") ;
+    background-image: url("../img/production.jpg");
     background-repeat: no-repeat;
 
     @media (max-width: $tablet-width-only) {
@@ -201,5 +202,4 @@
   &:active {
     opacity: 0.7;
   }
-
 }

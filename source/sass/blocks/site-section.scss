@@ -40,20 +40,19 @@
     margin-left: 4px;
     margin-bottom: 30px;
   }
-
 }
 
 .site-section__item {
   a {
-   @include footer-text;
+    @include footer-text;
 
-   &:hover {
-     color: $bright-sky-blue;
-     opacity: 1;
-   }
+    &:hover {
+      color: $bright-sky-blue;
+      opacity: 1;
+    }
 
-   &:active {
-     opacity: 0.7;
-   }
+    &:active {
+      opacity: 0.7;
+    }
   }
 }
