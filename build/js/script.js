@@ -49,3 +49,9 @@ document.addEventListener('keydown', (evt) => {
 });
 
 modalClose.addEventListener('click', closePopup);
+
+
+
+const phoneInput = document.querySelectorAll('input[type="tel"]');
+
+phoneInput.forEach(input => IMask(input, {mask: '+{7}(000)000-00-00'}));
