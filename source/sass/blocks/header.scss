@@ -15,11 +15,16 @@
 
   @media (max-width: $tablet-width-only) {
     height: 686px;
+    background:
+      url("../img/board-tablet.png") no-repeat calc(100% + 205px) 115px / 465px 340px,
+      url("../img/two-triangles-tablet.svg") no-repeat calc(100% + 200px) -40px,
+      url("../img/background-tablet.jpg") repeat-x 0 0 / 100%;
+
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background:
-        url("../img/board-tablet@2x.png") no-repeat calc(100% + 205px) 115px / 465px 340px,
-        url("../img/two-triangles-tablet.svg") no-repeat 100% 0,
+        url("../board-tablet@2x.png") no-repeat calc(100% + 205px) 115px / 930px 680px,
+        url("../img/two-triangles-tablet.svg") no-repeat calc(100%) - 40px,
         url("../img/background-tablet@2x.jpg") repeat-x 0 0 / 100%;
     }
   }

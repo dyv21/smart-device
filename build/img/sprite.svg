@@ -91,18 +91,22 @@
 <circle cx="1382" cy="753" r="5" fill="white"/>
 <circle cx="1657" cy="277" r="5" fill="white"/>
 </g>
-</symbol><symbol id="two-triangles-mobile" viewBox="0 0 169 437">
-<path opacity="0.2" d="M472.852 74.2351L266.129 432.29L59.4057 74.2351L472.852 74.2351Z" stroke="white"/>
-<path opacity="0.2" d="M262.133 223.531L141.317 432.791L20.5006 223.531L262.133 223.531Z" stroke="white"/>
-<circle cx="58.8206" cy="73.6721" r="3.76694" fill="white"/>
-<circle cx="20.3988" cy="223.596" r="3.76694" fill="white"/>
-<circle cx="141.694" cy="433.038" r="3.76694" fill="white"/>
-</symbol><symbol id="two-triangles-tablet" viewBox="0 0 169 437">
-<path opacity="0.2" d="M472.852 74.2351L266.129 432.29L59.4057 74.2351L472.852 74.2351Z" stroke="white"/>
-<path opacity="0.2" d="M262.133 223.531L141.317 432.791L20.5006 223.531L262.133 223.531Z" stroke="white"/>
-<circle cx="58.8206" cy="73.6721" r="3.76694" fill="white"/>
-<circle cx="20.3988" cy="223.596" r="3.76694" fill="white"/>
-<circle cx="141.694" cy="433.038" r="3.76694" fill="white"/>
+</symbol><symbol id="two-triangles-mobile" viewBox="0 0 506 483">
+<path opacity="0.2" d="M472.042 120.352L265.319 478.407L58.5957 120.352L472.042 120.352Z" stroke="white"/>
+<path opacity="0.2" d="M261.323 269.648L140.507 478.908L19.6905 269.648L261.323 269.648Z" stroke="white"/>
+<circle cx="58.0106" cy="119.789" r="3.76694" fill="white"/>
+<circle cx="19.5887" cy="269.713" r="3.76694" fill="white"/>
+<circle cx="140.884" cy="479.155" r="3.76694" fill="white"/>
+<circle cx="265.193" cy="478.401" r="3.76694" fill="white"/>
+<circle cx="472.374" cy="119.789" r="3.76694" fill="white"/>
+</symbol><symbol id="two-triangles-tablet" viewBox="0 0 513 506">
+<path opacity="0.2" d="M477.595 125.956L261.164 500.825L44.7338 125.956L477.595 125.956Z" stroke="white"/>
+<path opacity="0.2" d="M257.023 282.234L130.517 501.35L4.00996 282.234L257.023 282.234Z" stroke="white"/>
+<circle cx="44.1628" cy="125.39" r="3.94309" fill="white"/>
+<circle cx="3.94309" cy="282.325" r="3.94309" fill="white"/>
+<circle cx="130.91" cy="501.561" r="3.94309" fill="white"/>
+<circle cx="261.032" cy="500.772" r="3.94309" fill="white"/>
+<circle cx="477.903" cy="125.39" r="3.94309" fill="white"/>
 </symbol><symbol id="two-triangles" viewBox="0 0 778 704">
 <path opacity="0.2" d="M733.842 170.584L459.167 646.334L184.492 170.584L733.842 170.584Z" stroke="white"/>
 <path opacity="0.2" d="M454.148 368.75L293.5 647L132.852 368.75L454.148 368.75Z" stroke="white"/>
