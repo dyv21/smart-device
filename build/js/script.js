@@ -30,6 +30,20 @@ if (accordeonList) {
 const modal = body.querySelector('.modal')
 const modalShow = body.querySelector('.main-nav__item:last-child');
 const modalClose = modal.querySelector('.modal__close')
+const userName = modal.querySelector('#modal-user-name');
+const userPhone = modal.querySelector('#modal-user-phone');
+const textarea = modal.querySelector('#modal-question');
+
+let isStorageSupport = true;
+const storage = {};
+
+try {
+  storage.name = localStorage.getItem('name');
+  storage.phone = localStorage.getItem('phone');
+  storage.question = localStorage.getItem('question');
+} catch (err) {
+  isStorageSupport = false;
+}
 
 const closePopup = () => {
   if (modal.classList.contains('modal--show')) {
@@ -40,8 +54,26 @@ const closePopup = () => {
 
 modalShow.addEventListener('click', (evt) => {
   evt.preventDefault();
+
   modal.classList.add('modal--show');
   body.style = `overflow: hidden;`;
+
+  if (storage.name) {
+    userName.value = storage.name;
+    userPhone.value = storage.phone;
+    textarea.value = storage.question;
+    textarea.focus();
+  } else {
+    userName.focus();
+  }
+});
+
+modal.addEventListener("submit", () => {
+  if (isStorageSupport) {
+    localStorage.setItem("name", userName.value);
+    localStorage.setItem("phone", userPhone.value);
+    localStorage.setItem("question", textarea.value);
+  }
 });
 
 modal.addEventListener ('click', (evt) => {
@@ -63,3 +95,6 @@ modalClose.addEventListener('click', closePopup);
 const phoneInput = body.querySelectorAll('input[type="tel"]');
 
 phoneInput.forEach(input => IMask(input, {mask: '+{7}(000)000-00-00'}));
+
+
+

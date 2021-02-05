@@ -169,6 +169,10 @@
   }
 
   &:hover {
+    h3 {
+      color: $bright-sky-blue;
+    }
+
     &::before {
       background-color: $white;
     }
