@@ -121,7 +121,6 @@
       margin: 0;
       top: 41px;
       left: 43px;
-
     }
 
     @media (max-width: $mobile-width-only) {
@@ -169,6 +168,10 @@
   }
 
   &:hover {
+    h3 {
+      color: $bright-sky-blue;
+    }
+
     &::before {
       background-color: $white;
     }

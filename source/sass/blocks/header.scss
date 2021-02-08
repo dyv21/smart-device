@@ -1,10 +1,10 @@
 .header {
   height: 881px;
-  background-color: $dark;
   background:
     url("../img/board.png") no-repeat calc(50% + 433px) 258px,
     url("../img/two-triangles.svg") no-repeat calc(50% + 352px) 106px,
     url("../img/background.jpg") repeat-x;
+  background-color: $dark;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background:
@@ -32,9 +32,9 @@
   @media (max-width: $mobile-width-only) {
     height: 648px;
     background:
-    url("../img/board-mobile.png") no-repeat calc(100% + 10px) 90px,
-    url("../img/two-triangles-mobile.svg") no-repeat calc(100% + 337px) -45px,
-    url("../img/background-mobile.jpg") repeat-x;
+      url("../img/board-mobile.png") no-repeat calc(100% + 10px) 90px,
+      url("../img/two-triangles-mobile.svg") no-repeat calc(100% + 337px) -45px,
+      url("../img/background-mobile.jpg") repeat-x;
   }
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -53,7 +53,7 @@
   @media (max-width: $tablet-width-only) {
     padding-top: 20px;
     padding-left: 24px;
-    padding-right: 0px;
+    padding-right: 0;
   }
 
   @media (max-width: $mobile-width-only) {
